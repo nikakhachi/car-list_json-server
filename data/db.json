@@ -1,0 +1,100 @@
+{
+    "cars": [
+        {
+            "model": "Toyota",
+            "description": "Toyota Motor Corporation is a Japanese multinational automotive manufacturer headquartered in Toyota, Aichi, Japan. It was founded by Kiichiro Toyoda and incorporated on August 28, 1937.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/2018_Toyota_Corolla_%28ZWE211R%29_ZR_hybrid_hatchback_%282018-10-30%29_01.jpg",
+            "features": {
+                "ABS": true,
+                "El. Windows": false,
+                "Hatch": false,
+                "Bluetooth": true,
+                "Alarm": true,
+                "Parking Control": true,
+                "Navigation System": true,
+                "Board Computer": false,
+                "Multi Steering-Wheel": false
+            }
+        },
+        {
+            "model": "Audi",
+            "description": "Audi AG is a German automobile manufacturer that designs, engineers, produces, markets and distributes luxury vehicles.",
+            "image": "https://s1.cdn.autoevolution.com/images/models/AUDI_A3-Sportback-2020_main.jpg",
+            "features": {
+                "ABS": true,
+                "El. Windows": true,
+                "Hatch": true,
+                "Bluetooth": true,
+                "Alarm": true,
+                "Parking Control": true,
+                "Navigation System": true,
+                "Board Computer": true,
+                "Multi Steering-Wheel": true
+            }
+        },
+        {
+            "model": "Mitsubishi",
+            "description": "As a Japanese automaker, Mitsubishi has long been known as one of top manufacturers when it comes to reliability. In fact, the Lancer won most reliable car from 1997 all the way up until 2012",
+            "image": "https://carsandrooms.ge/wp-content/uploads/2014/12/IMG_4541-800x600.jpg",
+            "features": {
+                "ABS": false,
+                "El. Windows": false,
+                "Hatch": false,
+                "Bluetooth": false,
+                "Alarm": true,
+                "Parking Control": false,
+                "Navigation System": true,
+                "Board Computer": false,
+                "Multi Steering-Wheel": false
+            }
+        },
+        {
+            "model": "BMW",
+            "description": "BMW of San Diego is one of the most renowned BMW dealerships in the San Diego metropolitan area. Serving customers from El Cajon to Encinitas and everywhere in between, we have a truly impressive selection of new BMW models , Pre-Owned BMW cars and SUVs , and Certified Pre-Owned BMW vehicles too",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/BMW_G30.jpg",
+            "features": {
+                "ABS": true,
+                "El. Windows": false,
+                "Hatch": true,
+                "Bluetooth": true,
+                "Alarm": true,
+                "Parking Control": true,
+                "Navigation System": true,
+                "Board Computer": true,
+                "Multi Steering-Wheel": false
+            }
+        },
+        {
+            "model": "Toyota",
+            "description": "Toyota Motor Corporation is a Japanese multinational automotive manufacturer headquartered in Toyota, Aichi, Japan. It was founded by Kiichiro Toyoda and incorporated on August 28, 1937.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/2018_Toyota_Corolla_%28ZWE211R%29_ZR_hybrid_hatchback_%282018-10-30%29_01.jpg",
+            "features": {
+                "ABS": true,
+                "El. Windows": false,
+                "Hatch": false,
+                "Bluetooth": true,
+                "Alarm": true,
+                "Parking Control": true,
+                "Navigation System": true,
+                "Board Computer": false,
+                "Multi Steering-Wheel": false
+            }
+        },
+        {
+            "model": "Mercedes",
+            "description": "Mercedes-Benz combines luxury with performance across the full line of models including luxury sedans, SUVs, coupes, roadsters, convertibles & more.",
+            "image": "https://www.carscoops.com/wp-content/uploads/2019/09/6843b444-mercedes-eqc-accessories-00.jpg",
+            "features": {
+                "ABS": false,
+                "El. Windows": false,
+                "Hatch": false,
+                "Bluetooth": true,
+                "Alarm": false,
+                "Parking Control": false,
+                "Navigation System": true,
+                "Board Computer": false,
+                "Multi Steering-Wheel": true
+            }
+        }
+    ]
+}
