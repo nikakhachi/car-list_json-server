@@ -1,19 +1,19 @@
 import './car-list.css';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Car from './car';
+import { useSelector, useDispatch } from 'react-redux';
+import { getData } from '../../redux/actions';
 
 function Cars(){
 
-    const [data, setData] = useState([]);
+    const data = useSelector(state => state.cars);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        axios
-        .get('http://localhost:3001/cars')
-        .then(response => setData(response.data))
-        .catch(err => console.error(err))
-    }, []);
+        dispatch(getData());
+    }, [dispatch]);
+
 
     return (
         <div>
@@ -23,7 +23,7 @@ function Cars(){
             <Link to='/cars/new'><button id='add-carlist'>Add Car</button></Link>
                 {data.length === 0 ? <div className='loader'></div> : 
                 <div id='list-container'>
-                    {data.map(item => <Car item={item} data={data} setData={setData}/>)}
+                    {data.map(item => <Car key={item.id} item={item}/>)}
                 </div>}
         </div>
     )

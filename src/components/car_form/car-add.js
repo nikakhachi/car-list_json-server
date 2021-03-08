@@ -1,12 +1,13 @@
 import './car-form.css';
 import { useState } from 'react'
 import { v4 } from 'uuid';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { addCar } from '../../redux/actions'; 
 
 function CarAdd(){
 
-    const [model, setModel] = useState('');
+    const [model, setModel] = useState('Audi');
     const [description, setDescription] = useState('');
     const [imageUrl, setImageUrl] = useState('');
     const [abs, setAbs] = useState(false);
@@ -18,9 +19,12 @@ function CarAdd(){
     const [navigation, setNavigation] = useState(false);
     const [boardComputer, setBoardComputer] = useState(false);
     const [multiWheel, setMultiWheel] = useState(false);
-    const [msg, setMsg] = useState('');
 
-    function addCar(e){
+    const msg = useSelector(state => state.msg);
+
+    const dispatch = useDispatch();
+
+    function clickAddCar(e){
         e.preventDefault();
         const newCar = {
             id: v4(),
@@ -39,33 +43,13 @@ function CarAdd(){
                 multiWheel
             }
         }
-        axios
-        .post('http://localhost:3001/cars', newCar)
-        .then(response => {
-            setModel('');
-            setDescription('');
-            setImageUrl('');
-            setAbs(false);
-            setElWindows(false);
-            setHatch(false);
-            setBluetooth(false);
-            setAlarm(false);
-            setParkingControl(false);
-            setNavigation(false);
-            setBoardComputer(false);
-            setMultiWheel(false);
-            setTimeout(() => {
-                setMsg('');
-            }, 3500);
-            setMsg('Car Added Successfuly');
-        })
-        .catch(err => console.error(err))
+        dispatch(addCar(newCar));
     }
 
     return (
         <div id='form-container'>
             <h1>Add a New Car</h1>
-            <form id='form' onSubmit={addCar}>
+            <form id='form' onSubmit={clickAddCar}>
                 <label htmlFor='model-dropdown'>Car Model</label>
                 <select onChange={(e) => setModel(e.target.value)} id="model-dropdown" required>
                     <option value="default" disabled>Choose Car Model</option>

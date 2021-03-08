@@ -3,13 +3,15 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateCar } from '../../redux/actions';
 
 function CarEdit(){
 
     const carId = useParams().id;
+    const dispatch = useDispatch();
 
-
-    const [model, setModel] = useState('');
+    const [model, setModel] = useState('Audi');
     const [description, setDescription] = useState('');
     const [imageUrl, setImageUrl] = useState('');
     const [abs, setAbs] = useState(false);
@@ -21,7 +23,8 @@ function CarEdit(){
     const [navigation, setNavigation] = useState(false);
     const [boardComputer, setBoardComputer] = useState(false);
     const [multiWheel, setMultiWheel] = useState(false);
-    const [msg, setMsg] = useState('');
+    
+    const msg = useSelector(state => state.msg);
 
     useEffect(() => {
         axios
@@ -62,15 +65,7 @@ function CarEdit(){
                 multiWheel
             }
         }
-        axios
-        .put(`http://localhost:3001/cars/${carId}`, updatedCar)
-        .then(() => {
-            setTimeout(() => {
-                setMsg('');
-            }, 3500);
-            setMsg('Car was edited Successfuly');
-        })
-        .catch(err => console.log(err))
+        dispatch(updateCar(carId, updatedCar));
     }
 
 
@@ -80,7 +75,7 @@ function CarEdit(){
             <form id='form' onSubmit={editCar}>
                 <label htmlFor='model-dropdown'>Car Model</label>
                 <select value={model} onChange={(e) => setModel(e.target.value)} id="model-dropdown" required>
-                    <option value="default" disabled>Choose Car Model</option>
+                    <option disabled>Choose Car Model</option>
                     <option value="Audi">Audi</option>
                     <option value="BMW">BMW</option>
                     <option value="Mercedes">Mercedes</option>

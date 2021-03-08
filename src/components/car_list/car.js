@@ -1,17 +1,10 @@
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { deleteCar } from '../../redux/actions';
 
-function Car({item, data, setData}){
+function Car({item}){
 
-    function deleteCar(id){
-        axios
-        .delete(`http://localhost:3001/cars/${id}`)
-        .then(() => {
-            const newArray = data.filter(item => item.id !== id);
-            setData(newArray);
-        })
-        .catch(err => console.error(err));
-    }
+    const dispatch = useDispatch();
 
     return(
         <div className='list-container-item' key={item.id}>
@@ -35,7 +28,7 @@ function Car({item, data, setData}){
                         </div>
                         <div className='list-btns'>
                             <Link to={`/cars/edit/${item.id}`}><button className='listcar-edit'>Edit</button></Link>
-                            <button onClick={() => deleteCar(item.id)} className='listcar-delete'>Delete</button>
+                            <button onClick={() => dispatch(deleteCar(item.id))} className='listcar-delete'>Delete</button>
                         </div>
         </div>
     )
