@@ -1,18 +1,7 @@
-import './cars.css';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
-function Cars(){
-
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        axios
-        .get('http://localhost:3001/cars')
-        .then(response => setData(response.data))
-        .catch(err => console.error(err))
-    }, []);
+function Car({item, data, setData}){
 
     function deleteCar(id){
         axios
@@ -24,16 +13,8 @@ function Cars(){
         .catch(err => console.error(err));
     }
 
-    return (
-        <div>
-            <header>
-                <h1 id='shop-title'>Car Shopping List</h1>
-            </header>
-            <Link to='/cars/new'><button id='add-carlist'>Add Car</button></Link>
-                {data.length === 0 ? <div className='loader'></div> : 
-                <div id='list-container'>
-                    {data.map(item => (
-                    <div className='list-container-item' key={item.id}>
+    return(
+        <div className='list-container-item' key={item.id}>
                         <img className='list-img' src={item.imageUrl} alt='car'/>
                         <div className='list-info'>
                             <p className='listcar-title'>{item.model}</p>
@@ -56,13 +37,8 @@ function Cars(){
                             <Link to={`/cars/edit/${item.id}`}><button className='listcar-edit'>Edit</button></Link>
                             <button onClick={() => deleteCar(item.id)} className='listcar-delete'>Delete</button>
                         </div>
-                    </div>
-                ))}
-                </div>}
         </div>
     )
 }
 
-export default Cars;
-
-
+export default Car;

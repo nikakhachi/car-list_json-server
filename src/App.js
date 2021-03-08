@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import Cars from './components/cars/cars';
+import Cars from './components/car_list/car-list';
 import CarAdd from './components/car_form/car-add';
 import CarEdit from './components/car_form/car-edit';
 
