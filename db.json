@@ -36,7 +36,7 @@
     },
     {
       "model": "Mercedes",
-      "description": "2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...",
+      "description": "2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...2019 Mercedes-Benz C300 4Matic Sedan New Dad Review:",
       "imageUrl": "https://images.hgmsites.net/hug/mercedes-benz-s-class_100759264_h.jpg",
       "features": {
         "abs": true,
@@ -64,6 +64,40 @@
         "alarm": false,
         "parkingControl": true,
         "navigation": true,
+        "boardComputer": true,
+        "multiWheel": false
+      }
+    },
+    {
+      "id": "dff8e646-4bad-4a00-a002-fb4039def83a",
+      "model": "BMW",
+      "description": "BMW 8 Series (G15) - Wikipedia",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2019_BMW_M850i_xDrive_Automatic_4.4_Front.jpg/1200px-2019_BMW_M850i_xDrive_Automatic_4.4_Front.jpg",
+      "features": {
+        "abs": false,
+        "elWindows": false,
+        "hatch": true,
+        "bluetooth": false,
+        "alarm": true,
+        "parkingControl": true,
+        "navigation": true,
+        "boardComputer": true,
+        "multiWheel": false
+      }
+    },
+    {
+      "id": "4b28e538-ccc9-4c9d-a870-2bf1e17861fa",
+      "model": "Mitsubishi",
+      "description": "Mitsubishi Eclipse - Wikipedia",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mitsubishi_Eclipse_--_09-08-2009.jpg/1920px-Mitsubishi_Eclipse_--_09-08-2009.jpg",
+      "features": {
+        "abs": false,
+        "elWindows": false,
+        "hatch": false,
+        "bluetooth": true,
+        "alarm": false,
+        "parkingControl": true,
+        "navigation": false,
         "boardComputer": true,
         "multiWheel": false
       }
