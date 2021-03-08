@@ -1,3 +1,5 @@
 # Car Shopping List using JSON-SERVER
 
-## Demo Version. Work in Progress
+## Redux is used for state management
+
+### Add, edit or remove car of you choice.
