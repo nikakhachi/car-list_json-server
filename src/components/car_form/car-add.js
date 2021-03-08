@@ -44,6 +44,18 @@ function CarAdd(){
             }
         }
         dispatch(addCar(newCar));
+        setModel('');
+        setDescription('');
+        setImageUrl('');
+        setAbs(false);
+        setElWindows(false);
+        setHatch(false);
+        setBluetooth(false);
+        setAlarm(false);
+        setParkingControl(false);
+        setNavigation(false);
+        setBoardComputer(false);
+        setMultiWheel(false);
     }
 
     return (
@@ -51,7 +63,7 @@ function CarAdd(){
             <h1>Add a New Car</h1>
             <form id='form' onSubmit={clickAddCar}>
                 <label htmlFor='model-dropdown'>Car Model</label>
-                <select onChange={(e) => setModel(e.target.value)} id="model-dropdown" required>
+                <select value={model} onChange={(e) => setModel(e.target.value)} id="model-dropdown" required>
                     <option value="default" disabled>Choose Car Model</option>
                     <option value="Audi">Audi</option>
                     <option value="BMW">BMW</option>
