@@ -19,7 +19,7 @@ const reducer = (state = initialState, action) => {
         case UPDATE_CAR:
             return {...state, loading: false};
         case SET_MSG:
-            return {...state, msg: action.payload};
+            return {...state, loading: false, msg: action.payload};
         default:
             return state
     }
