@@ -1,0 +1,89 @@
+{
+  "cars": [
+    {
+      "model": "Mercedes",
+      "description": "2022 Mitsubishi Eclipse Cross Facelift Reveals Design ",
+      "imageUrl": "https://cdn.motor1.com/images/mgl/887kB/s1/2022-mitsubishi-eclipse-cross.jpg",
+      "features": {
+        "abs": true,
+        "elWindows": false,
+        "hatch": true,
+        "bluetooth": true,
+        "alarm": false,
+        "parkingControl": true,
+        "navigation": true,
+        "boardComputer": false,
+        "multiWheel": true
+      },
+      "id": "fd92081c-7314-4585-b913-94eb89188cff"
+    },
+    {
+      "model": "Mercedes",
+      "description": "2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...2019 Mercedes-Benz C300 4Matic Sedan New Dad Review: What ...",
+      "imageUrl": "https://images.hgmsites.net/hug/mercedes-benz-s-class_100759264_h.jpg",
+      "features": {
+        "abs": true,
+        "elWindows": true,
+        "hatch": true,
+        "bluetooth": true,
+        "alarm": false,
+        "parkingControl": false,
+        "navigation": true,
+        "boardComputer": false,
+        "multiWheel": true
+      },
+      "id": "afa66de5-09f4-48c8-96e2-ff1a12594503"
+    },
+    {
+      "id": "bb66ac9b-bde7-4939-8688-32b1289f52d7",
+      "model": "Audi",
+      "description": "Audi R8 V10 Decennium Celebrates 10 Years Of The 5.2 FSI",
+      "imageUrl": "https://cdn.motor1.com/images/mgl/qjRXZ/s1/audi-r8-v10-decennium.jpg",
+      "features": {
+        "abs": true,
+        "elWindows": false,
+        "hatch": true,
+        "bluetooth": false,
+        "alarm": true,
+        "parkingControl": true,
+        "navigation": true,
+        "boardComputer": true,
+        "multiWheel": false
+      }
+    },
+    {
+      "id": "c3917a83-3b4e-450e-9554-ff52bd448d55",
+      "model": "BMW",
+      "description": "BMW 8 Series (G15) - Wikipedia",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2019_BMW_M850i_xDrive_Automatic_4.4_Front.jpg/1200px-2019_BMW_M850i_xDrive_Automatic_4.4_Front.jpg",
+      "features": {
+        "abs": false,
+        "elWindows": false,
+        "hatch": true,
+        "bluetooth": false,
+        "alarm": false,
+        "parkingControl": true,
+        "navigation": true,
+        "boardComputer": false,
+        "multiWheel": true
+      }
+    },
+    {
+      "id": "4a516e5e-c501-430f-aadf-6d80d58b4d65",
+      "model": "Toyota",
+      "description": "2020 Toyota Yaris Cross (Small SUV) Unveiled, Gets AWD System",
+      "imageUrl": "https://gaadiwaadi.com/wp-content/uploads/2020/04/toyota-yaris-cross-2020-suv-1.jpg",
+      "features": {
+        "abs": false,
+        "elWindows": false,
+        "hatch": true,
+        "bluetooth": true,
+        "alarm": false,
+        "parkingControl": true,
+        "navigation": true,
+        "boardComputer": true,
+        "multiWheel": false
+      }
+    }
+  ]
+}

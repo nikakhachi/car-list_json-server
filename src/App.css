@@ -1,7 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+TC&display=swap");
 html {
   min-height: 100vh;
 }
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #d7e1ec, #ffffff);
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
