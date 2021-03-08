@@ -44,7 +44,7 @@ function CarAdd(){
             }
         }
         dispatch(addCar(newCar));
-        setModel('');
+        setModel('Audi');
         setDescription('');
         setImageUrl('');
         setAbs(false);
