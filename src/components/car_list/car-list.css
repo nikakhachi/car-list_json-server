@@ -84,6 +84,18 @@
   background-color: rgba(255, 0, 0, 0.753);
 }
 
+.loader:after {
+  content: " ";
+  display: block;
+  width: 5vw;
+  height: 5vw;
+  margin: 10% auto;
+  border-radius: 50%;
+  border: 0.6vw solid rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+  animation: loader 1.2s linear infinite;
+}
+
 @media (max-width: 1025px) {
   #shop-title {
     font-size: 5vw;
@@ -121,6 +133,11 @@
   .listcar-edit,
   .listcar-delete {
     padding: 5%;
+  }
+  .loader:after {
+    width: 10vw;
+    height: 10vw;
+    margin-top: 20%;
   }
 }
 
@@ -168,24 +185,9 @@
     font-size: 3.5vw;
     width: 100%;
   }
-}
-
-.loader:after {
-  content: " ";
-  display: block;
-  width: 5vw;
-  height: 5vw;
-  margin: 3.5% auto;
-  border-radius: 50%;
-  border: 0.6vw solid rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
-  animation: loader 1.2s linear infinite;
-}
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+  .loader:after {
+    width: 15vw;
+    height: 15vw;
+    margin-top: 25%;
   }
 }
