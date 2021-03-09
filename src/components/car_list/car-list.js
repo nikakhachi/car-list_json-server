@@ -20,11 +20,13 @@ function Cars(){
             <header>
                 <h1 id='shop-title'>Car Shopping List</h1>
             </header>
-            <Link to='/cars/new'><button id='add-carlist'>Add Car</button></Link>
                 {data.length === 0 ? <div className='loader'></div> : 
+                <>
+                <Link to='/cars/new'><button id='add-carlist'>Add Car</button></Link>
                 <div id='list-container'>
                     {data.map(item => <Car key={item.id} item={item}/>)}
-                </div>}
+                </div>
+                </>}
         </div>
     )
 }
