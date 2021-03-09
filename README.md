@@ -1,7 +1,9 @@
 # Car Shopping List
 
-### Using React-Router and Redux for state management.
+### JSON-SERVER.
+Running on fake REST API on back-end
 
-### Also uuid for generating random id when adding a new car.
+### React-Routers & Redux
+React-Router is used for routes and redux for state management
 
-### Add, edit or remove car of you choice.
+## Add, edit or remove car of you choice.
