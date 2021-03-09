@@ -21,6 +21,7 @@ function CarAdd(){
     const [multiWheel, setMultiWheel] = useState(false);
 
     const msg = useSelector(state => state.msg);
+    const loading = useSelector(state => state.loading);
 
     const dispatch = useDispatch();
 
@@ -98,7 +99,8 @@ function CarAdd(){
                     <button id='caraction-btn' type='submit'>Add Car</button>
                     <Link to='/cars'><button id='mainpage-btn' type='submit'>Main Page</button></Link>
                 </div>
-                {msg !== '' ? <p id='car-msg'><i className="fa fa-check-circle" aria-hidden="true"></i> {msg}</p> : <></>}
+                {msg !== '' ? <p id='car-msg'><i className="fa fa-check-circle" aria-hidden="true"></i> {msg}</p> : loading ? 
+                <div className='form-loader'></div> : <></>}
             </form>
         </div>
     )
