@@ -53,9 +53,14 @@ textarea {
 
 #dropdown-div label {
   margin: 0.1%;
+  font-size: 1.1vw;
 }
-#dropdown-div input {
+
+input[type="checkbox"] {
   margin-right: 1%;
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 #caraction-btn,
@@ -131,6 +136,7 @@ textarea {
 
   #dropdown-div label {
     margin: 0.5%;
+    font-size: 2.4vw;
   }
   #dropdown-div input {
     margin-right: 2%;
@@ -186,6 +192,10 @@ textarea {
   }
 
   #dropdown-div {
+    font-size: 4vw;
+    margin-top: 5%;
+  }
+  #dropdown-div label {
     font-size: 4vw;
   }
 
