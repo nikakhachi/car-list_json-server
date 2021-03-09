@@ -44,14 +44,14 @@ textarea {
   padding: 1%;
 }
 
-#dropdown-div {
+#features {
   margin: 2% 0 4% 0;
   display: flex;
   flex-direction: column;
   font-size: 1vw;
 }
 
-#dropdown-div label {
+#features label {
   margin: 0.1%;
   font-size: 1.1vw;
 }
@@ -129,16 +129,16 @@ input[type="checkbox"] {
     padding: 2%;
   }
 
-  #dropdown-div {
+  #features {
     margin: 3% 0 5% 0;
     font-size: 2vw;
   }
 
-  #dropdown-div label {
+  #features label {
     margin: 0.5%;
     font-size: 2.4vw;
   }
-  #dropdown-div input {
+  #features input {
     margin-right: 2%;
   }
 
@@ -191,11 +191,11 @@ input[type="checkbox"] {
     padding: 2%;
   }
 
-  #dropdown-div {
+  #features {
     font-size: 4vw;
     margin-top: 5%;
   }
-  #dropdown-div label {
+  #features label {
     font-size: 4vw;
   }
 

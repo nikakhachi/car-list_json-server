@@ -76,7 +76,7 @@ function CarAdd(){
                 <textarea value={description} onChange={(e) => setDescription(e.target.value)} id="car-description" rows="2" placeholder='Describe the car (optional)' />
                 <label htmlFor="car-image-url">Link For Car Image</label>
                 <input value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} type="url" id="car-image-url" placeholder='Enter image url' required/>
-                <div id='dropdown-div'>
+                <div id='features'>
                     <label htmlFor='abs'><input checked={abs} onChange={(e) => setAbs(e.target.checked)} type='checkbox' id='abs' />ABS</label>
                     
                     <label htmlFor='el-windows'><input checked={elWindows}  onChange={(e) => setElWindows(e.target.checked)} type='checkbox' id='el-windows' />El. Windows</label>
